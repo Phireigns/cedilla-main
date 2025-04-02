@@ -2,9 +2,10 @@ const ParallexSection = () => {
 
   return (
     <div
-      className="relative h-[50vh] md:h-[70vh] bg-cover bg-center bg-no-repeat bg-fixed"
+      className="relative h-[50vh] md:h-[70vh] bg-cover bg-center bg-no-repeat md:bg-fixed"
       style={{
         backgroundImage: 'url("/images/venue2.jpg")',
+        backgroundAttachment: 'scroll'
       }}
     >
       {/* Dark overlay */}

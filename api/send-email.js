@@ -28,7 +28,7 @@ export default async function handler(req, res) {
     // Send email to restaurant owner
     const ownerMailOptions = {
       from: `"${name}" <${email}>`,
-      to: 'phireigns@gmail.com', // Restaurant email
+      to: 'cedillahk@gmail.com', // Restaurant email
       subject: `New Reservation: ${name} for ${guests} guests on ${date}`,
       html: `
         <h2>New Reservation Request</h2>

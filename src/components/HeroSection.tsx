@@ -218,7 +218,8 @@ const HeroSection = () => {
           {/* Buttons */}
           <div ref={contentRef} className="flex flex-col sm:flex-row gap-8 mt-8">
             <a
-              href="/reservation"
+              href="https://app.eats365pos.com/hk/en/cedilla_tsimshatsui/reservation?referrer=https%3A%2F%2Flinktr.ee%2F" 
+              target="_blank"
               className="group relative px-12 py-4 bg-[#8b2c3a] text-white font-medium inline-flex items-center justify-center transition-all duration-500 rounded-none overflow-hidden shadow-lg hover:shadow-xl"
             >
               <span className="relative z-10 text-lg tracking-[0.2em] uppercase">

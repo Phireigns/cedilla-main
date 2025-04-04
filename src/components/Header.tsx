@@ -5,7 +5,7 @@ const navLinks = [
   { to: '/', label: 'HOME' },
   { to: '/about', label: 'ABOUT' },
   { to: '/menu', label: 'MENU' },
-  { to: '/reservation', label: 'RESERVATION', isHighlighted: true },
+  { to: 'https://app.eats365pos.com/hk/en/cedilla_tsimshatsui/reservation?referrer=https%3A%2F%2Flinktr.ee%2F', label: 'RESERVATION', isHighlighted: true, isExternal: true },
 ];
 
 const Header = () => {
@@ -35,10 +35,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src="/logo_cedilla-main.png" alt="Cedilla" className="w-10 h-10 mr-2 " />
-            <span className="text-2xl font-montserrat text-white hover:text-[#ffdbdb] transition-colors">
-              Cedilla
-            </span>
+            <img src="/c-logo.png" alt="Cedilla" className="w-10 h-10 mr-2 " />
           </Link>
 
           {/* Desktop Navigation */}
@@ -47,6 +44,8 @@ const Header = () => {
               <Link
                 key={link.to}
                 to={link.to}
+                target={link.isExternal ? "_blank" : undefined}
+                rel={link.isExternal ? "noopener noreferrer" : undefined}
                 className={`text-sm tracking-widest transition-all duration-300 relative group ${
                   link.isHighlighted
                     ? 'px-6 py-2.5 bg-[#8b2c3a] text-white overflow-hidden'
@@ -113,6 +112,8 @@ const Header = () => {
               <Link
                 key={link.to}
                 to={link.to}
+                target={link.isExternal ? "_blank" : undefined}
+                rel={link.isExternal ? "noopener noreferrer" : undefined}
                 className={`text-base tracking-widest transition-all duration-300 relative group active:scale-95 ${
                   link.isHighlighted
                     ? 'px-8 py-3 bg-[#8b2c3a] text-white overflow-hidden'

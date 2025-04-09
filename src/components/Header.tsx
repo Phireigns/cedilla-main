@@ -35,7 +35,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src="/c-logo.png" alt="Cedilla" className="w-10 h-10 mr-2 " />
+            <img src="/c-logo.png" alt="Cedilla" className="w-16 h-16 mr-2 " />
           </Link>
 
           {/* Desktop Navigation */}
@@ -101,7 +101,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         <div
-          style={{ top: '72px' }}
+          style={{ top: '98px' }}
           className={`md:hidden fixed inset-x-0 bottom-0 bg-[#76162A] transition-all duration-300 ease-in-out ${
             isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
           }`}

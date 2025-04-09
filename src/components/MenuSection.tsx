@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { menuItems } from '../data/menuItems';
 
 // Register GSAP plugins outside of component to avoid re-registration
 if (typeof window !== 'undefined') {
@@ -54,29 +55,6 @@ const MenuSection = () => {
 
   // Set initial opacity to 0 and fade in when mounted
   const initialStyle = !isMounted ? { opacity: 0 } : { opacity: 1 };
-
-  const menuItems = [
-    {
-      image: '/images/alacarte.jpg',
-      title: 'A La Carte',
-      description: 'Our signature dishes',
-    },
-    {
-      image: '/images/barmenu.jpg',
-      title: 'Bar Menu',
-      description: 'Light bites and drinks',
-    },
-    {
-      image: '/images/prix.jpg',
-      title: 'Prix Fixe',
-      description: 'Curated dining experiences',
-    },
-    {
-      image: '/images/winemenu.jpg',
-      title: 'Wine List',
-      description: 'Carefully selected wines',
-    },
-  ];
 
   return (
     <section

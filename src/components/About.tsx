@@ -135,7 +135,7 @@ const About = () => {
                 </p>
                 <p>
                   With certifications from prestigious wine institutions and experience in
-                  Michelin-starred restaurants, Victor brings unparalleled expertise to
+                  5-star Hotel, Victor brings unparalleled expertise to
                   Cedilla&apos;s wine program.
                 </p>
                 <p>

@@ -36,7 +36,7 @@ const HeroSection2 = () => {
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
           {/* Reserve Button - Styling similar to Header's highlighted button */}
           <a
-            href="https://app.eats365pos.com/hk/en/cedilla_tsimshatsui/reservation?referrer=https%3A%2F%2Flinktr.ee%2F"
+            href="https://inline.app/booking/cedilla/tst"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative px-10 py-4 bg-[#8b2c3a] text-white font-medium inline-flex items-center justify-center transition-all duration-500 overflow-hidden shadow-lg hover:shadow-xl min-w-[200px] text-center"

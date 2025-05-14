@@ -5,7 +5,7 @@ const navLinks = [
   { to: '/', label: 'HOME' },
   { to: '/about', label: 'ABOUT' },
   { to: '/menu', label: 'MENU' },
-  { to: 'https://app.eats365pos.com/hk/en/cedilla_tsimshatsui/reservation?referrer=https%3A%2F%2Flinktr.ee%2F', label: 'RESERVATION', isHighlighted: true, isExternal: true },
+  { to: 'https://inline.app/booking/cedilla/tst', label: 'RESERVATION', isHighlighted: true, isExternal: true },
 ];
 
 const Header = () => {
